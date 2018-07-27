@@ -4,9 +4,9 @@ const TodoList = (props) => {
   const {todos} = props
 
   return(
-    <ul>
-      {todos.map(todo => <li key={todo.id}>
-        <input type="checkbox" defaultChecked={todo.completed} />
+    <ul class="todo_list">
+      {todos.map(todo => <li id={todo.id}>
+        <input type="checkbox" name={'todo_id_' + todo.id} defaultChecked={todo.completed} />
         Task: {todo.name}
         </li>)}
     </ul>

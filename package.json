@@ -12,12 +12,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "jest"
+    "test": "jest",
+    "test:e2e": "jest -c=\"./testConfig/jest.e2e.config.js\""
   },
   "devDependencies": {
     "faker": "^4.1.0",
     "jest": "^23.4.1",
-    "jest-cli": "^23.4.1",
+    "jest-puppeteer": "^3.2.1",
     "puppeteer": "^1.6.1"
   }
 }
